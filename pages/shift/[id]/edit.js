@@ -35,6 +35,8 @@ export default function Index(props) {
     const status = shifts.status;
     if (status) {
       router.push("/shift");
+    } else {
+      alert(shifts.message);
     }
   };
   return (
